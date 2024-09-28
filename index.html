@@ -1,0 +1,864 @@
+<html>
+<head>
+    <title>Versatile Electronics Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        ul.sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        ul.sticky{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 100%;
+            background-color: lightseagreen;
+            font-size: x-large;
+        }
+
+        a{
+            color:white;
+            text-decoration: none;
+        }
+
+        li{
+            display: inline-block;
+            margin-top: 0;
+        }
+        
+        div.options {
+            margin: 0;
+            display: inline-block;
+            float: inline-end;
+        }
+       
+        nav {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            position: sticky;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            width: 100%;
+            background-color:lightseagreen;
+            font-size: x-large;
+            color: white;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        .BB:hover{
+            color: black;
+        }
+        .AA:hover {
+            background-color:white;
+            color: black;
+            
+        }
+
+        li.search input[type="text"] {
+            padding: 6px;
+            margin-right: 5px;
+            border: none;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+
+        div.scroll1 {
+            position: sticky;
+            top: 0;
+        }
+
+        div.mbh1{
+            border-top: 8px solid lightslategray;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 900;
+            border-bottom: 8px solid lightslategray;
+            background-color: white;
+        }
+        
+        div.mbh2 {
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 900;
+            background-color:lightskyblue;
+        }
+
+        div.mbitems {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Add space between the items */
+            padding: 5px;
+            margin: 5px;
+        }
+
+        div.mbh3 {
+            border: 2px solid black;
+            padding: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 48%; /* Make the boxes 48% to fit two items per row with space */
+        }
+
+        span.highlight {
+            color: red;
+            font-size: larger;
+            font-weight: 1000;
+        }
+
+        span.star {
+            color: orange;
+        }
+        button.addtocart{
+            border-radius: 50px;
+            border-color: #ef0202;
+            width:250px;
+            height: 40px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .end1 {
+            display: flex;
+        }
+
+.end2{
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.end2 h3 {
+    margin-bottom: 10px;
+    color: gold; /* Accent color for headers */
+    
+}
+
+.end2 p,
+.end2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.end2 ul li {
+    margin: 5px 0;
+}
+
+.end2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.end2 a:hover {
+    color:red; /* Accent color on hover */
+}
+
+.end3{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Divider line */
+    padding-top: 10px;
+}
+div.disclaimer{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Divider line */
+    padding-top: 10px;
+    
+}
+@media (max-width: 767px) and (min-width: 480px){
+        nav{
+            width: 100%;
+            height: 20px;
+            font-size: 13px;
+        }
+        div.options{
+            width: 100%;
+            height: 20px;
+            margin-left: 280px;
+            
+
+        }
+        li.search{
+            display: none;
+        }
+        a.BB{
+            font-size: 13px;
+            padding: 1px;
+            float: right;
+            display:inline-flex;
+            
+        
+        }
+        ul.sticky{
+            height: 100px;
+            display: flex;
+            
+        }
+       
+}
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="scroll1">
+        <ul class="sticky">
+            <li><br>&nbsp;&nbsp;<a href="#"><img src="./logo white.png" alt="" height="40px" width="150px"></li>
+             <div class="options"><br>
+                <li class="search">
+                    <a><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;<input type="text" placeholder="Find your Products" name="Search">&nbsp;&nbsp;</a>
+                </li>
+                <li><a class="BB" href="#Motherboard"><i class="fa-brands fa-product-hunt"></i>&nbsp;Our Products&nbsp;|&nbsp;</a></li>
+                <li><a class="BB" href="./Cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart&nbsp;|&nbsp;</a></li>
+                <li><a class="BB" href="./Login.html"><i class="fa-solid fa-user"></i>&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </div>
+        </ul>
+        <nav>
+            <li><a class="AA" href="#Motherboard">&nbsp;&nbsp;Motherboard&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Processor">&nbsp;&nbsp;Processor (CPU)&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Storage">&nbsp;&nbsp;Storage (Hard drive or SSD)&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Memory">&nbsp;&nbsp;Memory (RAM)&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Case">&nbsp;&nbsp;Case&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Coolers">&nbsp;&nbsp;Coolers&nbsp;&nbsp;</a></li>
+            <li><a class="AA" href="#Power supply">&nbsp;&nbsp;Power supply&nbsp;&nbsp;</a></li>
+        </nav>
+    </div>
+    <img src="./Offer image 1.jpg" alt="" height="400px" width="100%"><br><br>
+    <img src="./Offer image 2.jpg" alt="" height="150px" width="100%"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<img src="./Offer image 3.jpg" alt="" width="48%">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./Offer image 4.jpg" alt="" width="48%">
+    <br>
+    <br>
+    <center><img src="./Image 1.jpg" alt="" height="400px" width="90%"></center>
+    <section id="Motherboard"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Motherboard</center>
+    </div><br><br>
+    <video src="./Motherboard/Motherboard expalin.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Motherboard/1.png" height="400px" width="100%" alt=""><br><br>
+            <b>Asus Rog Strix X670E-F Gaming Wi-Fi</b><br>
+            <span class="highlight">₹41,939</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Motherboard/2.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>ASRock B650M Pro Rs WiFi AM5 Micro ATX</b><br>
+            <span class="highlight"> ₹24,370</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+                <img src="./Motherboard/3.jpg" height="400px" width="100%" alt=""><br><br>
+                <b>Gigabyte Z790 Aorus Xtreme</b><br>
+                <span class="highlight">₹1,05,675</span><br>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-regular fa-star"></i></span><br>
+                <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+                <img src="./Motherboard/4.jpg" height="400px" width="100%" alt=""><br><br>
+                <b>ASUS ROG Strix B660-I Gaming Wifi LGA 1700</b><br>
+                <span class="highlight"> ₹23,000</span><br>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-regular fa-star"></i></span><br>
+                <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+                <img src="./Motherboard/5.jpg" height="400px" width="100%" alt=""><br><br>
+                <b>ASRock X670E Steel Legend</b><br>
+                <span class="highlight">₹46,619</span><br>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-regular fa-star"></i></span><br>
+                <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+                <img src="./Motherboard/6.png" height="400px" width="100%" alt=""><br><br>
+                <b>Asus ROG MAXIMUS Z690 HERO EVA</b><br>
+                <span class="highlight"> ₹1,09,536</span><br>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-regular fa-star"></i></span><br>
+                <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+</div>
+<section id="Processor"></section>
+<br>
+<br>
+<br>
+<br><br><br>
+
+    <div class="mbh1">
+        <center>Processor</center>
+    </div><br>
+    <video src="./Processor/Processor video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Processor/1.jpg" height="400px" width="70%" alt=""><br><br>
+            <b>AMD Ryzen Threadripper 7970X Desktop Processor</b><br>
+            <span class="highlight">₹2,82,999</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Processor/2.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>Intel Core i9-9900KS 9th Gen Desktop Processor</b><br>
+            <span class="highlight"> ₹2,29,723</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Processor/3.webp" height="400px" width="60%" alt=""><br><br>
+            <b>AMD Ryzen Threadripper Pro 5975WX Desktop Processor</b><br>
+            <span class="highlight">₹4,19,999</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Processor/4.jfif" height="400px" width="70%" alt=""><br><br>
+            <b>Intel Xeon Gold 6140 Server Processor</b><br>
+            <span class="highlight"> ₹3,77,089</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Processor/5.jfif" height="400px" width="70%" alt=""><br><br>
+            <b>AMD Ryzen 9 9950X Processor</b><br>
+            <span class="highlight">₹78,999</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Processor/6.jpg" height="400px" width="80%" alt=""><br><br>
+            <b>Intel Core i9 Processor - 14900K</b><br>
+            <span class="highlight"> ₹52,700</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <section id="Storage"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Storage(Hard drive or SSD)</center>
+    </div><br>
+    <video src="./Storage/Storage  ssd  video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Storage/1.png" height="400px" width="90%" alt=""><br><br>
+            <b>Crucial T705</b><br>
+            <span class="highlight">₹48,900</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Storage/2.jpg" height="400px" width="70%" alt=""><br><br>
+            <b>WD Black SN850X</b><br>
+            <span class="highlight"> ₹17,439</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Storage/3.jpg" height="400px" width="80%" alt=""><br><br>
+            <b>Samsung SSD 990 PRO</b><br>
+            <span class="highlight">₹10,500</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Storage/4.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>SK Hynix Platinum P41 PCIe NVMe Gen4 M.2 2280 Internal Gaming SSD</b><br>
+            <span class="highlight"> ₹22,604</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Storage/5.avif" height="400px" width="100%" alt=""><br><br>
+            <b>CORSAIR MP600 ELITE</b><br>
+            <span class="highlight">₹15,719</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Storage/6.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>Gigabyte Aorus Gen5 12000 2 NVMe SSD</b><br>
+            <span class="highlight"> ₹32,069</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <section id="Memory"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Memory(RAM)</center>
+    </div><br>
+    <video src="./RAM/Ram video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./RAM/1.jpg" height="400px" width="90%" alt=""><br><br>
+            <b>Patriot Viper Xtreme 5 RGB</b><br>
+            <span class="highlight">₹29,199</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./RAM/2.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>G.Skill Trident Z5 Neo</b><br>
+            <span class="highlight"> ₹21,100</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./RAM/3.jpg" height="400px" width="90%" alt=""><br><br>
+            <b>PNY XLR8 Gaming Mako DDR5</b><br>
+            <span class="highlight">₹16,371</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./RAM/4.webp" height="400px" width="90%" alt=""><br><br>
+            <b>Klevv Cras XR5 RGB DDR5</b><br>
+            <span class="highlight"> ₹16,503</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./RAM/5.png" height="400px" width="80%" alt=""><br><br>
+            <b>Corsair Vengeance LPX DDR4</b><br>
+            <span class="highlight">₹9,199</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./RAM/6.png" height="400px" width="100%" alt=""><br><br>
+            <b>Sabrent Rocket DDR5-4800</b><br>
+            <span class="highlight"> ₹17,113</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <section id="Case"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Case</center>
+    </div><br>
+    <video src="./Case/Case video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Case/1.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>corsair obsidian series 4000x rgb</b><br>
+            <span class="highlight">₹10,615</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Case/2.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>NZXT H7 Flow</b><br>
+            <span class="highlight"> ₹14,400</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Case/3.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>Shadow Base 800 FX</b><br>
+            <span class="highlight">₹16,304</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Case/4.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>Antec Torque Black Red Mid Tower Cabinet</b><br>
+            <span class="highlight"> ₹38,351</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Case/5.webp" height="400px" width="50%" alt=""><br><br>
+            <b>Cougar Conquer 2 ARGB Full Tower Cabinet</b><br>
+            <span class="highlight">₹25,029</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Case/6.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>Cooler Master HAF 700 EVO ARGB Full Tower Cabinet</b><br>
+            <span class="highlight"> ₹71,999</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <section id="Coolers"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Coolers</center>
+    </div><br>
+    <video src="./Coolers/Cooler video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Coolers/1.jpg" height="400px" width="60%" alt=""><br><br>
+            <b>Noctua NH-D15</b><br>
+            <span class="highlight">₹10,699</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Coolers/2.jpg" height="400px" width="80%" alt=""><br><br>
+            <b> Corsair iCUE H150i Elite Capellix</b><br>
+            <span class="highlight"> ₹17,790</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Coolers/3.jpg" height="400px" width="80%" alt=""><br><br>
+            <b> Dark Rock Pro 4</b><br>
+            <span class="highlight">₹23,815</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Coolers/4.png" height="400px" width="80%" alt=""><br><br>
+            <b>NZXT Kraken Z73</b><br>
+            <span class="highlight"> ₹26,299</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Coolers/5.jpg" height="400px" width="70%" alt=""><br><br>
+            <b>Cooler Master Hyper 212 Black Edition</b><br>
+            <span class="highlight">₹8,727</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Coolers/6.webp" height="400px" width="80%" alt=""><br><br>
+            <b> Arctic Liquid Freezer II 360</b><br>
+            <span class="highlight"> ₹11,900</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <section id="Power supply"></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mbh1">
+        <center>Power Supply</center>
+    </div><br>
+    <video src="./Power Supply/Power supply video.mp4" controls autoplay muted loop width="100%" height="70%"></video><br><br>
+    <div class="mbh2">
+        <center>Our Products</center>
+    </div>
+    <div class="mbitems">
+        <div class="mbh3">
+            <img src="./Power Supply/1.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>Corsair RM850x (2021)</b><br>
+            <span class="highlight">₹15,815</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Power Supply/2.webp" height="400px" width="80%" alt=""><br><br>
+            <b>Seasonic Prime TX-750</b><br>
+            <span class="highlight"> ₹72,814</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Power Supply/3.png" height="400px" width="80%" alt=""><br><br>
+            <b>EVGA SuperNOVA 1000 G5</b><br>
+            <span class="highlight">₹17,094</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Power Supply/4.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>Cooler Master V850 SFX Gold</b><br>
+            <span class="highlight"> ₹13,499</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Power Supply/5.jpg" height="400px" width="80%" alt=""><br><br>
+            <b>NZXT C850</b><br>
+            <span class="highlight">₹11,552</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-regular fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        <div class="mbh3">
+            <img src="./Power Supply/6.jpg" height="400px" width="100%" alt=""><br><br>
+            <b>Straight Power 12 850W</b><br>
+            <span class="highlight"> ₹69,710</span><br>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span><br>
+            <button class="addtocart">&nbsp;&nbsp;&nbsp;Add to Cart&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <footer>
+        <div class="end1">
+            <div class="end2">
+                <h3>About Us</h3>
+                <p>Our website offers over 5000 products and more than 200 brands with year-round promotional offers and even No Cost EMI options. <br>Our team makes sure to understand every customer's personal needs and budgets while assisting them to make the best choice while buying their tech.</p>
+            </div>
+            <div class="end2">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li><br><br>
+                    <li><a href="#Motherboard">Products</a></li><br><br>
+                    <li><a href="./Login.html">Log In</a></li><br>
+                    
+                </ul>
+            </div>
+            <div class="end2">
+                <h3>Contact Us</h3>
+                <p>E-mail: support@ves.com</p><br>
+                <p>Phone: (123) 456-7890</p><br>
+                <p>Address: 26,G.C.Avenue,Kolkata,India </p>
+            </div>
+            <div class="end2">
+                <h3>Follow Us</h3>
+                <i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                <i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                <i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <h3 style="color:gold;"><center><span style="text-decoration: underline;">Disclaimer</span></center></h3><br>
+            <p>Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</p><br>
+
+        </div>
+        <div class="end3">
+            <p>&copy; 2024 Versatile Electronics Store. All Rights Reserved.</p>
+            <p>Designed by Naveenkumar Panneerselvam @ VES</p>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
